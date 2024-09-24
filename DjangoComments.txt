@@ -7,3 +7,35 @@ python manage.py makemigrations
 python manage.py migrate
 
 python manage.py createsuperusergit 
+
+
+Git push comments:
+
+      To add a text file 
+        git push origin master
+        git commit -m "Updated DjangoComments.txt file"
+        git push origin master
+        
+To push the project in github:
+
+      Prerequisites:
+          git --version
+
+      Initialize Git in Your Project
+          git init
+          git add .
+          git commit -m "Initial Django project commit"
+
+      Create the repository in github and cpoy the url of the new repository created
+
+          git remote add origin <your-repo-url>
+          git push -u origin master
+
+
+You can add a .gitignore file for Django to exclude unnecessary files. Create a .gitignore file with the following content:
+          *.pyc
+          __pycache__/
+          db.sqlite3
+          /media/
+          /static/
+          .env

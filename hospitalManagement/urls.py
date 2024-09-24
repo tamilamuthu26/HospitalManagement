@@ -22,6 +22,8 @@ from hospitalManagementApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index),
+    path('addnew',views.addnew, name='addnew'),
+    
     path('about/', views.about),
     path('service/', views.service),
     path('feature/', views.feature),
